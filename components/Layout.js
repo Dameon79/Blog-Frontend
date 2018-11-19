@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import Footer from '../components/Footer'
 import '../scss/application.scss'
 
 class Layout extends Component {
