@@ -5,6 +5,7 @@ describes ('<Footer />', () => {
     const component = shallow(
       <Footer />
     )
+    
     expect(component).toMatchSnapshot()
   })
 })

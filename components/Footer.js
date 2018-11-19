@@ -1,7 +1,7 @@
 import { Component } from 'react'
 
 class Footer extends Component {
-  render() {
+  render () {
     return <div>
       <ul>
         <li><a href='#'>Footer Link</a></li>
