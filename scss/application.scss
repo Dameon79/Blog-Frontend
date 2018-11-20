@@ -1,6 +1,7 @@
 @import "reset";
-@import "base";
+
 @import "fonts";
+@import "base";
 @import "highlight";
 
 @import "components/c-header";
@@ -25,4 +26,4 @@
 @import "utilities/u-white-border";
 @import "utilities/u-pagy";
 
-@import "animations/a-ds-welcome-animation"
+@import "animations/a-ds-welcome-animation";

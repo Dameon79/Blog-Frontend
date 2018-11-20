@@ -1,10 +1,13 @@
 import { Component } from 'react'
-import Layout from '../components/Layout'
+
+import Header from '../components/shared/Header'
+import HomeLayout from '../components/HomeLayout'
 
 class Index extends Component {
   render () {
-    return <Layout {...this.props}>
-    </Layout>
+    return <HomeLayout {...this.props}>
+      <div>Home</div>
+    </HomeLayout>
   }
 }
 

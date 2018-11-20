@@ -1,14 +1,14 @@
 import { Component } from 'react'
 import '../scss/application.scss'
 
-import NavBar from './shared/NavBar'
+import Header from './shared/Header'
 import Footer from './shared/Footer';
 
 class Layout extends Component {
   render () {
     return(
       <>
-        <NavBar />
+        <Header />
         { this.props.children }
         <Footer />
       </>
