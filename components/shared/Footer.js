@@ -6,7 +6,7 @@ class Footer extends Component {
     return(
       <footer className="c-footer">
         <nav className="c-footer__nav">
-          <Link href="/index">
+          <Link href="/">
             <a className="c-burgernav__menu">Home</a>
           </Link>
           <Link href="/about">

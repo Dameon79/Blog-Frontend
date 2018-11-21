@@ -37,7 +37,7 @@ class Nav extends Component {
     
     
         <nav className="c-burgernav">
-          <Link href="/index">
+          <Link href="/">
             <a className="c-burgernav__menu">Home</a>
           </Link>
           <Link href="/about">
