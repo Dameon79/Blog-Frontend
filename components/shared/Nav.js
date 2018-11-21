@@ -15,7 +15,7 @@ class Nav extends Component {
   animateBurger () {
     const { burgerNav } = this.state
 
-    if (burgerNav === 'c-burger-container') {
+    if (window.innerWidth < 720 && burgerNav === 'c-burger-container') {
       this.setState({
         burgerNav: "c-burger-container change"
       })  
