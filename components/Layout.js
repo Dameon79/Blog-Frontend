@@ -4,6 +4,7 @@ import '../scss/application.scss'
 import NavBar from './shared/NavBar'
 import Footer from './shared/Footer';
 
+
 class Layout extends Component {
   render () {
     return(

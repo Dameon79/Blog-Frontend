@@ -5,6 +5,10 @@
   opacity: 0.7;
   height: 2.5rem;
   width: 2.5rem;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 @media only screen and (min-width: $media-medium) {

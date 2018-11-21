@@ -1,13 +1,13 @@
 
-// @font-face {
-//   font-family: 'Quicksand';
-//   font-style: normal;
-//   font-weight: 400;
-//   src: 
-//     local('Quicksand Regular'), local('Quicksand-Regular'),
-//     url('/fonts/quicksand-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-//     url('/fonts/anton-v9-latin-regular.woff') format('woff'); /* Modern Browsers */
-// }
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: 
+    local('Quicksand Regular'), local('Quicksand-Regular'),
+    url('/static/fonts/quicksand-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('/static/fonts/anton-v9-latin-regular.woff') format('woff'); /* Modern Browsers */
+}
 
 /* exo-2-200 - latin */
 @font-face {
@@ -21,13 +21,13 @@
     url('/static/fonts/exo-2-v4-latin-200.woff') format('woff'); /* Modern Browsers */
 }
 
-// /* anton-regular - latin */
-// @font-face {
-//   font-family: 'Anton';
-//   font-style: normal;
-//   font-weight: 400;
-//   src: 
-//     local('Anton Regular'), local('Anton-Regular'),
-//     url('/fonts/anton-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-//     url('/fonts/anton-v9-latin-regular.woff') format('woff'); /* Modern Browsers */
-// }
+/* anton-regular - latin */
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  src: 
+    local('Anton Regular'), local('Anton-Regular'),
+    url('/static/fonts/anton-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('/static/fonts/anton-v9-latin-regular.woff') format('woff'); /* Modern Browsers */
+}

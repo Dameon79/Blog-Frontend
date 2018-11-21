@@ -1,8 +1,14 @@
 import { Component } from 'react'
+import Link from 'next/link'
+
 
 class PersonalLogo extends Component {
   render () {
-    return <img src='/static/logo.png' className="c-personal-logo"></img>
+    return (
+    <Link href="/index">
+      <img src='/static/images/logo.png' className="c-personal-logo"></img>
+    </Link>
+    );
   }
 }
 

@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import Link from 'next/link'
 
 class Nav extends Component {
   constructor (props) {
@@ -36,11 +37,21 @@ class Nav extends Component {
     
     
         <nav className="c-burgernav">
-          <a href="#" className="c-burgernav__menu">Home</a>
-          <a href="#" className="c-burgernav__menu">About Me</a> 
-          <a href="#" className="c-burgernav__menu">My Projects</a> 
-          <a href="#" className="c-burgernav__menu">Blog Articles</a> 
-          <a href="#" className="c-burgernav__menu u-white-border">Contact</a>  
+          <Link href="/index">
+            <a className="c-burgernav__menu">Home</a>
+          </Link>
+          <Link href="/about">
+            <a className="c-burgernav__menu">About Me</a> 
+          </Link>
+          <Link href="/projects">
+            <a className="c-burgernav__menu">My Projects</a> 
+          </Link>
+          <Link href="/articles">
+            <a className="c-burgernav__menu">Blog Articles</a>
+          </Link>
+          <Link href="/contact">
+            <a className="c-burgernav__menu u-white-border">Contact</a>  
+          </Link>
         </nav>
       </div>
     );
