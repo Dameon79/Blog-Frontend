@@ -21,7 +21,7 @@ ShallowWrapper {
         className="c-personal-logo"
         src="/static/images/logo.png"
       />,
-      "href": "/index",
+      "href": "/",
     },
     "ref": null,
     "rendered": Object {
@@ -48,7 +48,7 @@ ShallowWrapper {
           className="c-personal-logo"
           src="/static/images/logo.png"
         />,
-        "href": "/index",
+        "href": "/",
       },
       "ref": null,
       "rendered": Object {

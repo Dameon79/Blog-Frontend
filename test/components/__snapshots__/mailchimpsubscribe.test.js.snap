@@ -55,10 +55,10 @@ ShallowWrapper {
         >
           <input
             className="c-mc-signup__button"
-            defaultValue="Subscribe"
             id="mc-embedded-subscribe"
             name="subscribe"
             type="submit"
+            value="Subscribe"
           />
         </div>
       </form>,
@@ -101,10 +101,10 @@ ShallowWrapper {
           >
             <input
               className="c-mc-signup__button"
-              defaultValue="Subscribe"
               id="mc-embedded-subscribe"
               name="subscribe"
               type="submit"
+              value="Subscribe"
             />
           </div>,
         ],
@@ -174,10 +174,10 @@ ShallowWrapper {
           "props": Object {
             "children": <input
               className="c-mc-signup__button"
-              defaultValue="Subscribe"
               id="mc-embedded-subscribe"
               name="subscribe"
               type="submit"
+              value="Subscribe"
             />,
             "className": "c-mc-signup__clear",
           },
@@ -188,10 +188,10 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "className": "c-mc-signup__button",
-              "defaultValue": "Subscribe",
               "id": "mc-embedded-subscribe",
               "name": "subscribe",
               "type": "submit",
+              "value": "Subscribe",
             },
             "ref": null,
             "rendered": null,
@@ -248,10 +248,10 @@ ShallowWrapper {
           >
             <input
               className="c-mc-signup__button"
-              defaultValue="Subscribe"
               id="mc-embedded-subscribe"
               name="subscribe"
               type="submit"
+              value="Subscribe"
             />
           </div>
         </form>,
@@ -294,10 +294,10 @@ ShallowWrapper {
             >
               <input
                 className="c-mc-signup__button"
-                defaultValue="Subscribe"
                 id="mc-embedded-subscribe"
                 name="subscribe"
                 type="submit"
+                value="Subscribe"
               />
             </div>,
           ],
@@ -367,10 +367,10 @@ ShallowWrapper {
             "props": Object {
               "children": <input
                 className="c-mc-signup__button"
-                defaultValue="Subscribe"
                 id="mc-embedded-subscribe"
                 name="subscribe"
                 type="submit"
+                value="Subscribe"
               />,
               "className": "c-mc-signup__clear",
             },
@@ -381,10 +381,10 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "className": "c-mc-signup__button",
-                "defaultValue": "Subscribe",
                 "id": "mc-embedded-subscribe",
                 "name": "subscribe",
                 "type": "submit",
+                "value": "Subscribe",
               },
               "ref": null,
               "rendered": null,
