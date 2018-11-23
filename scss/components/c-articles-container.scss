@@ -2,8 +2,8 @@
   display: grid;
   margin: 0 auto; 
   margin: 10px;
-  min-height: 60vh;
- 
+  min-height: 65vh;
+  
   &__heading {
     margin-top: 15px;
   }
@@ -57,6 +57,10 @@
       font-weight: 600;
     }
   }
+}
+
+.c-articles-container.blog {
+  min-height: 0vh;
 }
 
 @media only screen and (min-width: $media-medium) {

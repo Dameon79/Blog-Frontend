@@ -48,6 +48,12 @@ textarea {
   font-weight: 600;
 }
 
+fieldset {
+  border: 1px solid rgba(60, 35, 129, 0.274);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .highlight {
   padding: 10px;
   overflow: auto;

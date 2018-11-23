@@ -1,9 +1,9 @@
 import { Component } from 'react'
 
-import PersonalLogo from './PersonalLogo';
-import DsWelcomeAnimation from './DsWelcomeAnimation';
+import PersonalLogo from './PersonalLogo'
+import DsWelcomeAnimation from './DsWelcomeAnimation'
 import Nav from './Nav'
-import MailchimpSubscribe from './MailchimpSubscribe';
+import MailchimpSubscribe from './MailchimpSubscribe'
 
 class Header extends Component {
   render () {

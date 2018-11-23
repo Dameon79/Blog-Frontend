@@ -5,9 +5,9 @@ import Link from 'next/link'
 class PersonalLogo extends Component {
   render () {
     return (
-    <Link href="/">
-      <img src='/static/images/logo.png' className="c-personal-logo"></img>
-    </Link>
+      <Link href='/'>
+        <img src='/static/images/logo.png' className='c-personal-logo'></img>
+      </Link>
     );
   }
 }

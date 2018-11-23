@@ -10,25 +10,25 @@
   }
 
   &__photo {
-    position: relative;
-    height: 75px;
-    width: 75px;
-    border: 1px solid grey;
-    margin-right: 10px;
-    margin-top: 7px;
+    height: 300px;
+    width: 300px;
+    box-shadow: 0 1px 4px rgb(198, 198, 199);
     border-radius: 10px;
-    float: left;
-    background-image: url('/static/sampleme.jpg');
+    margin: 0 auto;
+    margin-top: 7px;
+    background-image: url('/static/images/sampleme.jpg');
     background-size: 100%;
+    background-position: center;
     filter: grayscale(80%);
   }
 
   &__welcome {
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-family: 'Anton';
     letter-spacing: 1.5px;
-    text-shadow: 1px 1px grey;
-    padding-top: 5px;
+    margin-bottom: 0;
+    margin-top: 5px;
+    text-align: center;
   }
 
   &__name {
@@ -36,14 +36,18 @@
     letter-spacing: 0.5px;
     font-size: 0.9rem;
     padding-top: 4px;
+    margin: 0 ;
+    text-align: center;
+    font-size: 1.5rem;
   }
 
   &__welcome-text {
     font-family: 'Anton';
-    font-size: 0.9rem;
     padding-top: 4px;
     padding-bottom: 3px;
     letter-spacing: 0.5px;
+    margin: 0;
+    text-align: center;
   }
 
   &__main-text {
@@ -92,10 +96,8 @@
   .c-about-me-page {
 
     &__photo {
-      width: 150px;
-      height: 150px;
     }
-
+    
     &__welcome {
       font-size: 2.5rem;
     }
