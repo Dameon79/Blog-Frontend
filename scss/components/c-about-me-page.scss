@@ -49,7 +49,6 @@
   &__heading {
     text-decoration-line: underline;
     text-underline-position: under;
-    
   }
 
   &__name {
@@ -68,42 +67,6 @@
     padding: 10px;
     font-family: 'Exo 2';
   }
-
-  &__skills-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 80%;
-    margin: 0 auto;
-    border: 2px solid grey;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    background-color: rgb(219, 219, 219);
-  }
-  
-  &__skills-text {
-    width: 100%;
-    text-align: center;
-    font-family: 'Anton';
-    padding: 5px;
-  }
-
-  &__skills-image {
-    height: 60px;
-    padding: 5px;
-  }
-}
-
-.c-skills-ruby {
-  height: 45px;
-  margin-left: 10px;
-  margin-top: 5px;
-}
-
-.c-skills-rails {
-  margin-top: 5px;
 }
 
 @media only screen and (min-width: $media-medium) {
@@ -118,7 +81,6 @@
 
     &__intro {
       width: 50%;
-      
     }
     
     &__hello {
@@ -132,18 +94,5 @@
     &__welcome-text {
       font-size: 1.8rem;
     }
-
-    &__skills-text {
-      font-size: 1.6rem;
-    }
-    
-    &__skills-image {
-      height: 80px;
-    }
-  }
-
-  .c-skills-ruby {
-    height: 70px;
-
   }
 }
