@@ -2,11 +2,13 @@ import { Component } from 'react'
 import Link from 'next/link'
 
 
-function thisYear() {
-  return new Date().getFullYear()
-}
+
 
 class Footer extends Component {
+  thisYear () {
+    return new Date().getFullYear()
+  }
+
   render () {
     return(
       <footer className='c-footer'>
@@ -42,7 +44,7 @@ class Footer extends Component {
             <img src='/static/images/Twitter1.png' className='c-socialmedialogos'></img>
           </a>
         </nav>
-        <h6 className='c-footer__copyright'>&copy; Dameon Sumpton {thisYear()} </h6>
+        <h6 className='c-footer__copyright'>&copy; Dameon Sumpton {this.thisYear()} </h6>
       </footer>
     );
   }
