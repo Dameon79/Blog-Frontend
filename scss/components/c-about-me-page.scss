@@ -1,0 +1,99 @@
+.c-about-me-page {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  &__photo {
+    height: 300px;
+    width: 95%;
+    box-shadow: 0 1px 4px rgb(198, 198, 199);
+    margin: 0 auto;
+    background-image: url('/static/images/sampleme.jpg');
+    background-size: 100%;
+    background-position: center;
+  }
+
+  &__link {
+    color: rgb(63, 22, 63);
+  }
+
+  &__list-container {
+    display: flex;
+    justify-content: space-between; 
+    background-color: rgb(235, 228, 240);
+    padding-left: 10px;
+    padding-bottom: 5px;
+  }
+
+  &__list {
+    list-style: square;
+    margin-left: 15px;
+    margin-right: 5px;
+    font-size: 0.75rem;
+  }
+
+  &__intro {
+    font-family: 'Anton';
+    margin: 0 auto;
+    width: 95%;
+  }
+
+  &__hello {
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+
+  &__heading {
+    text-decoration-line: underline;
+    text-underline-position: under;
+    text-transform: uppercase;
+  }
+
+  &__name {
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+    margin: 0 ;
+    font-size: 1.5rem;
+  }
+
+  &__welcome-text {
+    letter-spacing: 0.5px;
+    margin: 0;
+  }
+
+  &__main-text {
+    padding: 10px;
+    font-family: 'Exo 2';
+  }
+}
+
+@media only screen and (min-width: $media-medium) {
+  .c-about-me-page {
+
+    &__photo {
+      float: left;
+      width: 30%;
+      height: 400px;
+      margin-right: 15px;
+    }
+
+    &__intro {
+      width: 50%;
+    }
+    
+    &__hello {
+      font-size: 2.5rem;
+    }
+
+    &__name {
+      font-size: 2rem;
+    }
+
+    &__welcome-text {
+      font-size: 1.8rem;
+    }
+  }
+}
