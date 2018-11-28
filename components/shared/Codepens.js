@@ -10,16 +10,15 @@ class Codepens extends Component {
   }
 
   componentDidMount () {
-    this.setState({loading: true})
+    this.setState({ loading: true })
   }
 
   initalizeCodepen () {
     if (this.state.loading) {
-
       const script = document.createElement('script')
       script.src = '/static/codepen.js'
       script.async = true
-  
+
       document.body.appendChild(script)
 
       return <>
