@@ -6,17 +6,27 @@ import { MarkdownPreview } from 'react-marked-markdown'
 
 import Layout from '../components/Layout'
 import Comments from '../components/shared/Comments'
+<<<<<<< HEAD
 import ArticleComment from '../components/shared/ArticleComment'
+=======
+>>>>>>> 4127462c35405c9986f3c9f8f4d664775f987124
 
 class ArticlePage extends Component {
   constructor (props) {
     super(props)
     this.articleQuery = gql`
+<<<<<<< HEAD
       query article($slug: String!) {
         article(slug: $slug) {
           id
           title
           slug
+=======
+      query article($id: ID!) {
+        article(id: $id) {
+          id
+          title
+>>>>>>> 4127462c35405c9986f3c9f8f4d664775f987124
           text
           articleThumbnail
           createdAt
