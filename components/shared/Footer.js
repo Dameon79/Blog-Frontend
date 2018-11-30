@@ -1,12 +1,7 @@
 import { Component } from 'react'
 import Link from 'next/link'
 
-function thisYear () {
-  return new Date().getFullYear()
-}
-
 class Footer extends Component {
-
   render () {
     return (
       <footer className='c-footer'>
@@ -14,16 +9,16 @@ class Footer extends Component {
           <Link href='/'>
             <a className='c-burgernav__menu'>Home</a>
           </Link>
-          <Link href='/about'>
+          <Link href='/about' as='about-me'>
             <a className='c-burgernav__menu'>About Me</a>
           </Link>
-          <Link href='/projects'>
+          <Link href='/projects' as='my-projects'>
             <a className='c-burgernav__menu'>My Projects</a>
           </Link>
-          <Link href='/articles'>
+          <Link href='/articles' as='all-blog-posts'>
             <a className='c-burgernav__menu'>Blog Articles</a>
           </Link>
-          <Link href='/contact'>
+          <Link href='/contact' as='contact-me'>
             <a className='c-burgernav__menu u-white-border'>Contact</a>
           </Link>
         </nav>
@@ -38,7 +33,7 @@ class Footer extends Component {
           <a href='https://www.linkedin.com/in/dameon-sumpton-407503ab/'>
             <img src='/static/images/linkedin1.png' className='c-socialmedialogos' />
           </a>
-          <a href='https://twitter.com/dameon_sumpton'>
+          <a href='https://twitter.com/DameonSumpton'>
             <img src='/static/images/Twitter1.png' className='c-socialmedialogos' />
           </a>
         </nav>

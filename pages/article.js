@@ -6,15 +6,17 @@ import { MarkdownPreview } from 'react-marked-markdown'
 
 import Layout from '../components/Layout'
 import Comments from '../components/shared/Comments'
+import ArticleComment from '../components/shared/ArticleComment'
 
 class ArticlePage extends Component {
   constructor (props) {
     super(props)
     this.articleQuery = gql`
-      query article($id: ID!) {
-        article(id: $id) {
+      query article($slug: String!) {
+        article(slug: $slug) {
           id
           title
+          slug
           text
           articleThumbnail
           createdAt
@@ -30,13 +32,16 @@ class ArticlePage extends Component {
   }
 
   render () {
-    return <Query query={this.articleQuery} variables={{ id: this.props.url.query.id }}>
+    return <Query query={this.articleQuery} variables={{ slug: this.props.url.query.slug }}>
       {({ loading, data: { article } }) => {
         if (loading) {
           return <Layout {...this.props}>
             <h1 className='c-article__heading'>loading..</h1>
             <div className='c-article__container'>
-              <article className='c-article__body' />
+              <div className='c-articledata loading' />
+              <article className='c-article__body loading'>Article on it's way
+                <img className='c-article__image loading' />
+              </article>
             </div>
           </Layout>
         } else {
@@ -55,7 +60,7 @@ class ArticlePage extends Component {
               </article>
               <div className='c-comments-container'>
                 <h3 className='c-comments-container__comment-counter'>{article.comments.length} Comments</h3>
-                <a className='c-comments-container__login' href='/auth/auth0'>Login to comment</a>
+                <ArticleComment url={this.props.url} />
                 {article.comments.map((comment, index) => {
                   return <Comments comment={comment} key={index} />
                 })}
