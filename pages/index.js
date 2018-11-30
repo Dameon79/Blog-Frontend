@@ -16,6 +16,7 @@ class Index extends Component {
         articles {
           id
           title
+          slug
           text
           articleThumbnail
         }
@@ -28,7 +29,7 @@ class Index extends Component {
       <h2>My Codepens</h2>
       <div className='c-my-codepens'>
         <Codepens />
-        <Link href='/projects'>
+        <Link href='/projects' as='my-projects'>
           <a className='c-my-codepens__all-pens'>View More Pens</a>
         </Link>
       </div>
@@ -41,14 +42,14 @@ class Index extends Component {
             } else {
               return <>
                 { articles.map(article => {
-                  return <Article key={article.id} article={article} />
+                  return <Article key={article.slug} article={article} />
                 })}
               </>
             }
           }}
         </Query>
       </div>
-      <Link href='/articles'>
+      <Link href='/articles' as='all-blog-posts'>
         <a className='c-articles-container__all-articles'>View all Articles</a>
       </Link>
     </HomeLayout>

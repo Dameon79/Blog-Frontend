@@ -6,6 +6,11 @@
     padding-right: 1.5rem;
     padding-bottom: 5px;
     margin-top: 8px;
+
+    &.loading {
+      background-color: white;
+      height: 300px;
+    }
   }
 
   &__container {
@@ -21,6 +26,12 @@
     position: relative; 
     margin-top: 1.5rem;
     margin-bottom: 3rem;
+
+    &.loading {
+      min-height: 75vh;
+      background-color: white;
+      font-size: 2rem;
+    }
   }
  
   &__heading {

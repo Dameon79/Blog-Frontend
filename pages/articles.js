@@ -15,6 +15,7 @@ class Articles extends Component {
           id
           title
           text
+          slug
           articleThumbnail
         }
       }
