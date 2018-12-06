@@ -10,7 +10,6 @@ class Callback extends Component {
     const auth = new Auth()
     if (/access_token|id_token|error/.test(this.props.url.asPath)) {
       auth.handleAuthentication()
-      Router.push('/')
     }
   }
 
