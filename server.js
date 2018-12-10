@@ -20,19 +20,20 @@ app.prepare()
       renderAndCache(req, res, '/', req.query)
     })
 
-    server.get('/articles/', (req, res) => {
+    server.get('/all-blog-posts', (req, res) => {
       renderAndCache(req, res, '/articles', req.query)
     })
 
-    server.get('/article/:slug', (req, res) => {
+    server.get('/articles/:slug', (req, res) => {
       renderAndCache(req, res, '/article', { slug: req.params.slug })
     })
 
-    server.get('/about', (req, res) => {
-      renderAndCache(req, res, '/about', req.query)
+    server.get('/about-me', (req, res) => {
+      const actualPage = '/about'
+      renderAndCache(req, res, actualPage, req.query)
     })
 
-    server.get('/contact', (req, res) => {
+    server.get('/contact-me', (req, res) => {
       renderAndCache(req, res, '/contact', req.query)
     })
 
@@ -40,7 +41,7 @@ app.prepare()
       renderAndCache(req, res, '/callback', req.query)
     })
 
-    server.get('/projects', (req, res) => {
+    server.get('/my-projects', (req, res) => {
       renderAndCache(req, res, '/projects', req.query)
     })
 
@@ -49,7 +50,6 @@ app.prepare()
     })
 
     server.listen(port, (err) => {
-      0
       if (err) throw err
       console.log(`> Ready on http://localhost:${port}`)
     })

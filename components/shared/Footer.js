@@ -6,19 +6,19 @@ class Footer extends Component {
     return (
       <footer className='c-footer'>
         <nav className='c-footer__nav'>
-          <Link href='/'>
+          <Link href={'/'}>
             <a className='c-burgernav__menu'>Home</a>
           </Link>
-          <Link href='/about' as='about-me'>
+          <Link href={'/about'} as={'about-me'}>
             <a className='c-burgernav__menu'>About Me</a>
           </Link>
-          <Link href='/projects' as='my-projects'>
+          <Link href={'/projects'} as={'my-projects'}>
             <a className='c-burgernav__menu'>My Projects</a>
           </Link>
-          <Link href='/articles' as='all-blog-posts'>
+          <Link href={'/articles'} as={'all-blog-posts'}>
             <a className='c-burgernav__menu'>Blog Articles</a>
           </Link>
-          <Link href='/contact' as='contact-me'>
+          <Link href={'/contact'} as={'contact-me'}>
             <a className='c-burgernav__menu u-white-border'>Contact</a>
           </Link>
         </nav>

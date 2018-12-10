@@ -85,7 +85,7 @@ class ArticlePage extends Component {
                 </div>
 
                 <article className='c-article__body'>
-                  <img className='c-article__image' src={`${'http://localhost:3001'}${article.articleThumbnail}`} />
+                  <img className='c-article__image' src={`${process.env.BACKEND_URL}${article.articleThumbnail}`} />
                   <MarkdownPreview value={article.text} />
                 </article>
                 <div className='c-comments-container'>
