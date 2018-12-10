@@ -34,8 +34,9 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
-    "test": "jest"
+    "start": "NODE_ENV=production node server.js -p $PORT",
+    "test": "jest",
+    "heroku-postbuild": "next build"
   },
   "devDependencies": {
     "babel-jest": "^23.6.0",
