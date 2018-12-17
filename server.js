@@ -1,6 +1,8 @@
 const express = require('express')
 const next = require('next')
 const LRUCache = require('lru-cache')
+const postmark = require('postmark')
+const bodyParser = require('body-parser')
 
 const port = parseInt(process.env.PORT, 10) || 3000
 const dev = process.env.NODE_ENV !== 'production'
@@ -13,8 +15,11 @@ const ssrCache = new LRUCache({
 })
 
 app.prepare()
+
   .then(() => {
     const server = express()
+    server.use(bodyParser.json())
+    server.use(bodyParser.urlencoded({ extended: true }))
 
     server.get('/', (req, res) => {
       renderAndCache(req, res, '/', req.query)
@@ -35,6 +40,30 @@ app.prepare()
 
     server.get('/contact-me', (req, res) => {
       renderAndCache(req, res, '/contact', req.query)
+    })
+
+    server.post('/contact-me', (req, res) => {
+      let client = new postmark.ServerClient(`${process.env.SERVER_TOKEN}`)
+
+      client.sendEmail(
+        {
+          From: req.body.From,
+          To: req.body.To,
+          Subject: req.body.Name,
+          HtmlBody: req.body.HtmlBody,
+          ReplyTo: req.body.ReplyTo
+        }
+
+      ).then(response => {
+        console.log('Sending message')
+        console.log(response.To)
+        console.log(response.Message)
+        console.log(res.statusCode)
+        return res.sendStatus(200)
+      }).catch(error => {
+        console.log(error)
+        return res.sendStatus(500)
+      })
     })
 
     server.get('/callback', (req, res) => {
