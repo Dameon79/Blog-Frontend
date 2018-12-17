@@ -12,6 +12,28 @@
     width: 95%;
     margin-top: 10px;
   }
+
+  &__submitted {
+    width: 250px;
+    margin: 0 auto;
+    color:white;
+    border-radius: 5px;
+    background: rgb(72, 65, 95);
+    font-weight: bold;
+    padding: 10px;
+    box-shadow: 0 1px 4px rgb(198, 198, 199);
+  }
+
+  &__failed {
+    width: 250px;
+    margin: 0 auto;
+    color:white;
+    border-radius: 5px;
+    background: rgb(136, 40, 40);
+    font-weight: bold;
+    padding: 10px;
+    box-shadow: 0 1px 4px rgb(198, 198, 199);
+  }
 }
 
 @media only screen and (min-width: $media-medium) {

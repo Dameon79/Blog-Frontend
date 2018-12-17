@@ -1,8 +1,9 @@
 import { Component } from 'react'
 import { Query, Mutation } from 'react-apollo'
+import { MarkdownPreview } from 'react-marked-markdown'
+
 import gql from 'graphql-tag'
 import withData from '../lib/withData'
-import { MarkdownPreview } from 'react-marked-markdown'
 import moment from 'moment'
 
 import Layout from '../components/Layout'
