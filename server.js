@@ -47,11 +47,11 @@ app.prepare()
 
       client.sendEmail(
         {
-          From: req.body.From,
-          To: req.body.To,
-          Subject: req.body.Name,
-          HtmlBody: req.body.HtmlBody,
-          ReplyTo: req.body.ReplyTo
+          From: String(req.body.From),
+          To: String(req.body.To),
+          Subject: String(req.body.Name),
+          HtmlBody: String(req.body.HtmlBody),
+          ReplyTo: String(req.body.ReplyTo)
         }
 
       ).then(response => {
