@@ -32,7 +32,7 @@ class About extends Component {
           <p>These were a great introduction to learn some basic HTML, CSS and Javascript
             but for me it was obvious that the more complex concepts would take much longer to grasp
             and work through doing it alone.</p>
-          <p>Thats where ProCoders came in. They run a fabulous full stack Web development boot camp based in Leeds (you can check them out <a class='c-about-me-page__link' href='https://procoders.co.uk/' target='blank'>here</a>)</p>
+          <p>Thats where ProCoders came in. They run a fabulous full stack Web development boot camp based in Leeds (you can check them out <a className='c-about-me-page__link' href='https://procoders.co.uk/' target='blank'>here</a>)</p>
           <p>I was lucky enough to get enrolled on the course and haven't looked back since!</p>
           <h1 className='c-about-me-page__heading'> Skills acquired</h1>
           <div className='c-about-me-page__list-container'>
