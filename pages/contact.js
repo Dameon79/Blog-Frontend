@@ -61,6 +61,7 @@ class Contact extends Component {
             </FlashMessage> : '' }
 
           <form className='f-contact-form' onSubmit={this.contactForm} >
+            <input type='hidden' name='_csrf' value='{{csrfToken}}' />
             <fieldset>
               <legend>Contact Me</legend>
               <label htmlFor='name'>Name:</label>

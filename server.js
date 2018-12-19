@@ -9,6 +9,11 @@ const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
 
+const cookieParser = require('cookie-parser')
+const csrf = require('csurf')
+
+const csrfProtection = csrf({ cookie: true })
+
 const ssrCache = new LRUCache({
   max: 100,
   maxAge: 1000 * 60 * 60 // 1hour
@@ -20,6 +25,7 @@ app.prepare()
     const server = express()
     server.use(bodyParser.json())
     server.use(bodyParser.urlencoded({ extended: true }))
+    server.use(cookieParser())
 
     server.get('/', (req, res) => {
       renderAndCache(req, res, '/', req.query)
@@ -38,8 +44,8 @@ app.prepare()
       renderAndCache(req, res, actualPage, req.query)
     })
 
-    server.get('/contact-me', (req, res) => {
-      renderAndCache(req, res, '/contact', req.query)
+    server.get('/contact-me', csrfProtection, (req, res) => {
+      renderAndCache('send', { csrfToken: req.csrfToken() }, req, res, '/contact', req.query)
     })
 
     server.post('/contact-me', (req, res) => {
